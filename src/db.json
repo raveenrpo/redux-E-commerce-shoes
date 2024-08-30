@@ -1,0 +1,362 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60d2e87c-9eaa-46a0-b9aa-0f730291262b/air-force-1-07-shoes-VWCc04.png",
+      "price": 9695,
+      "rating": 4.8,
+      "title": "Nike Black & White Air Force ",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "2",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87ecf2b3-9888-473e-b218-077e284c3dbd/dunk-high-shoes-n3vgBk.png",
+      "price": 9295,
+      "rating": 4,
+      "title": "Nike Dunk High",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": true
+    },
+    {
+      "id": "3",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99178fd7-98c7-4ca0-adec-c93ec867e418/dunk-low-shoes-b69X6n.png",
+      "price": 11895,
+      "rating": 4.1,
+      "title": "Nike Dunk Low",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "4",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/389b709e-5102-4e55-aa5d-07099b500831/blazer-mid-77-vintage-shoes-dNWPTj.png",
+      "price": 7995,
+      "rating": 4.3,
+      "title": "Nike Blazer Mid 77 ",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "5",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/805533ff-a59c-486c-9629-f690babde17a/air-max-ap-shoes-3Rdq04.png",
+      "price": 8295,
+      "rating": 4.6,
+      "title": "Nike Air Max AP",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "6",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c16a276-4048-4b22-872c-8779bb0cfcd8/free-metcon-6-workout-shoes-5L4dkH.png",
+      "price": 10795,
+      "rating": 3.9,
+      "title": "Nike Free ",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "7",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/db7813d0-a95b-4222-bf49-54f558426b42/free-metcon-6-workout-shoes-Q3pWcF.png",
+      "price": 8675,
+      "rating": 3.7,
+      "title": "Nike Free Met",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "8",
+      "img": "https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/349d779a-6d86-4982-9c0f-93f979038cc4/court-vision-low-next-nature-shoes-p3CnbT.png",
+      "price": 4995,
+      "rating": 4,
+      "title": "Nike Court Vision Low",
+      "category": "Women",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "9",
+      "img": "https://static.nike.com/a/images/t_PDP_864_v1,f_auto,q_auto:eco/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ea8067e4-5f9a-44c1-b602-69730157ddfe/air-jordan-1-low-se-shoes-xmgzfl.png",
+      "price": 10295,
+      "rating": 4.7,
+      "title": "Air Jordan 1 Low",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "10",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e0ab9b6a-3f2c-4568-8917-e756b5b49ed6/court-borough-low-recraft-older-shoes-cg2qJ0.png",
+      "price": 4495,
+      "rating": 3.5,
+      "title": "Nike Court Borough Low",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "11",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/39e0ae89-68dd-437a-971a-71520b325128/jordan-3-retro-shoes-6Zzf1s.png",
+      "price": 5095,
+      "rating": 3.5,
+      "title": "Jordan 3 Retro",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "12",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/052cb4bf-813c-4a64-bb10-830ef78a91cb/blazer-mid-77-se-older-shoes-Dw2jK6.png",
+      "price": 6995,
+      "rating": 4.2,
+      "title": "Nike Blazer Mid 77se",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "13",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c5ff7a56-6965-4066-9a80-d09ec285b8f2/p-6000-shoes-wKvvJd.png",
+      "price": 9695,
+      "rating": 4.3,
+      "title": "Nike P-6000",
+      "category": "Women",
+      "quantity": 1,
+      "bestseller": true
+    },
+    {
+      "id": "14",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/8b6f89cd-8b70-4080-b6b4-eea40132cdc5/zoom-vomero-5-shoes-gwmf2m.png",
+      "price": 15995,
+      "rating": 4.8,
+      "title": "Nike Zoom Vomero",
+      "category": "Women",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "15",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ce5353ba-1a90-44a2-9540-a7e7e561ab23/air-max-nuaxis-shoes-2GDM9K.png",
+      "price": 8495,
+      "rating": 4.2,
+      "title": "Nike Air Max Nuaxis",
+      "category": "Women",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "16",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/224023ec-160e-447d-a88c-a96718ce69e5/pegasus-plus-road-running-shoes-DW06JM.png",
+      "price": 16995,
+      "rating": 4.6,
+      "title": "Nike Pegasus plus",
+      "category": "Women",
+      "quantity": 1,
+      "bestseller": true
+    },
+    {
+      "id": "17",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/3a5c9c49-f1b4-4841-b9e0-b5a85260f469/zoom-vomero-5-shoes-p73FBC.png",
+      "price": 15995,
+      "rating": 4.3,
+      "title": "Nike Zoom Vomero 5",
+      "category": "Women",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "18",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/21713e79-bf62-4d20-8c3c-21bfa4ffffff/cortez-textile-shoes-vLmBqb.png",
+      "price": 8695,
+      "rating": 4.6,
+      "title": "Nike Court Textile",
+      "category": "Women",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "19",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/4939dc0a-4ca1-4069-bd3f-16949c97f92e/tatum-2-younger-shoes-WR0b9c.png",
+      "price": 5995,
+      "rating": 4.8,
+      "title": "Tatum",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": true
+    },
+    {
+      "id": "20",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5cfd16ff-0bc5-439d-b350-e8b79977e0bd/air-force-1-older-shoes-pPqnSp.png",
+      "price": 7597,
+      "rating": 4.6,
+      "title": "Nike Air Force 1",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "21",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d2574eda-e7c8-4629-856d-f0d5f737c5b2/luka-2-older-shoes-bHMwcm.png",
+      "price": 7495,
+      "rating": 3.6,
+      "title": "Luka 2",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "22",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/e4f1f930-6b28-4153-8150-355b179ef9aa/tatum-2-older-basketball-shoes-bVlDDL.png",
+      "price": 6995,
+      "rating": 4.6,
+      "title": "Tatum 2",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "23",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/debfe00a-96d0-446e-b91c-590d69f536cc/dunk-low-se-older-shoes-JQTpnT.png",
+      "price": 7995,
+      "rating": 4.6,
+      "title": "Nike Dunk Low SE",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "24",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/a159e556-ebae-43f8-969f-44c5653d0364/air-jordan-4-retro-older-shoes-Ct24tC.png",
+      "price": 11095,
+      "rating": 4.6,
+      "title": "Air Jordan 4 Retro",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "25",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/bd68ce4b-18bf-4a33-8033-364d5d02b267/air-jordan-1-low-se-older-shoes-1RtGMR.png",
+      "price": 8295,
+      "rating": 3.7,
+      "title": "Air Jordan 1 Low SE",
+      "category": "Kids",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "26",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cc7f9ed1-bb4b-4a8a-944d-586c7e05a03a/blazer-mid-77-shoes-pKBLXb.png",
+      "price": 7995,
+      "rating": 4.1,
+      "title": "Nike Blazer Mid 77 ",
+      "category": "Women",
+      "quantity": 1,
+      "bestseller": false
+    },
+    {
+      "id": "27",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/882c21ec-b405-4e45-92d3-111a108e0cf0/sabrina-2-ep-basketball-shoes-w6qwqM.png",
+      "price": 11895,
+      "rating": 4.8,
+      "title": "Sabrina 2AP ",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": true
+    },
+    {
+      "id": "28",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b10b5561-ff15-48a2-8fcb-e24daccc73a0/ultrafly-trail-racing-shoes-4DRfrN.png",
+      "price": 7995,
+      "rating": 4.7,
+      "title": "Nike Ultrafly",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": true
+    },
+    {
+      "id": "29",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e777c881-5b62-4250-92a6-362967f54cca/air-force-1-07-shoes-NMmm1B.png",
+      "price": 8195,
+      "rating": 4.9,
+      "title": "Nike Air Force ",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": true
+    },
+    {
+      "id": "30",
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0b8f99c5-f665-477f-8eff-fc44afef0aa5/court-vision-mid-next-nature-shoes-VKCWFj.png",
+      "price": 7995,
+      "rating": 4.7,
+      "title": "Nike Court Vision Mid",
+      "category": "Men",
+      "quantity": 1,
+      "bestseller": true
+    }
+  ],
+  "users": [
+    {
+      "id": "0bce",
+      "name": "anas",
+      "email": "anas@gmail",
+      "password": "11111",
+      "cart": [
+        {
+          "id": "2",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87ecf2b3-9888-473e-b218-077e284c3dbd/dunk-high-shoes-n3vgBk.png",
+          "price": 9295,
+          "rating": 4,
+          "title": "Nike Dunk High",
+          "category": "Men",
+          "quantity": 6,
+          "bestseller": true
+        }
+      ]
+    },
+    {
+      "id": "b64b",
+      "name": "rpo",
+      "email": "balckbeardwhite@gmail.com",
+      "password": "333333",
+      "cart": [
+        {
+          "id": "6",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c16a276-4048-4b22-872c-8779bb0cfcd8/free-metcon-6-workout-shoes-5L4dkH.png",
+          "price": 10795,
+          "rating": 3.9,
+          "title": "Nike Free ",
+          "category": "Men",
+          "quantity": 1,
+          "bestseller": false
+        },
+        {
+          "id": "11",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/39e0ae89-68dd-437a-971a-71520b325128/jordan-3-retro-shoes-6Zzf1s.png",
+          "price": 5095,
+          "rating": 3.5,
+          "title": "Jordan 3 Retro",
+          "category": "Kids",
+          "quantity": 1,
+          "bestseller": false
+        },
+        {
+          "id": "5",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/805533ff-a59c-486c-9629-f690babde17a/air-max-ap-shoes-3Rdq04.png",
+          "price": 8295,
+          "rating": 4.6,
+          "title": "Nike Air Max AP",
+          "category": "Men",
+          "quantity": 1,
+          "bestseller": false
+        }
+      ]
+    }
+  ]
+}
