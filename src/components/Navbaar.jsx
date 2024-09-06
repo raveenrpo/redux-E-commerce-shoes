@@ -55,7 +55,7 @@ const Navbaar = ({ size }) => {
                 </p>
               ) : (
                 <Link to={"/signin"}>
-                  <p className="cursor-pointer hover:text-black pl-14 pt-1 text-xl">
+                  <p className="cursor-pointer hover:text-green-500 pl-14 pt-1 text-xl">
                     Login
                   </p>
                 </Link>

@@ -25,7 +25,13 @@ const Login = () => {
         return;
       }
 
-      const newuser = { name: name, email: mail, password: pass, cart: [] };
+      const newuser = {
+        name: name,
+        email: mail,
+        password: pass,
+        cart: [],
+        blockStatus: false,
+      };
       await fetch("http://localhost:4000/users", {
         method: "POST",
         headers: {

@@ -1,32 +1,48 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Shopcontext } from "../context/Shopcontext";
+import { Link, useParams } from "react-router-dom";
 import Title from "../components/Title";
-import { Link } from "react-router-dom";
-import Navbaar from "../components/Navbaar";
-import Footer from "../components/Footer";
-
-const Cart = () => {
-  const { cartItems, currency, delevaryfee, carttotal, deleteitem, quantity } =
-    useContext(Shopcontext);
-  const userJson = localStorage.getItem("user");
-
-  const user = JSON.parse(userJson);
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+const Admincart = () => {
+  const { userid } = useParams();
+  const { usercount, currency } = useContext(Shopcontext);
+  const [productdata, setproductdata] = useState([]);
+  const [name, setname] = useState("");
+  //   console.log(usercount);
+  //   console.log(userid);
+  const fetchproductdata = () => {
+    usercount.map((item) => {
+      if (item.id === userid) {
+        setproductdata(item.cart);
+        setname(item.name);
+      }
+    });
+  };
+  useEffect(() => {
+    fetchproductdata();
+  }, [userid]);
+  //   console.log(productdata);
   return (
     <div>
-      <Navbaar />
       <div className="p-10">
+        <Link to={"/adminuser"}>
+          <button className="pt-10 px-11 text-xl">
+            <FontAwesomeIcon icon={faArrowLeft} />
+            back
+          </button>
+        </Link>
         <div className="text-center text-2xl pt-10 border-t">
-          <Title text1={"Your "} text2={" Cart"} />
+          <Title text1={"Cart  "} text2={"  " + name} />
         </div>
-        {cartItems.length === 0 ? (
+        {productdata.length === 0 ? (
           <div className="text-center mt-10">
             <p>Your cart is empty.</p>
           </div>
         ) : (
           <div className="mt-10">
             <ul className="space-y-4">
-              {cartItems.map((item, index) => (
+              {productdata.map((item, index) => (
                 <li
                   key={index}
                   className="flex justify-between items-center border-b pb-4 mb-4"
@@ -43,30 +59,10 @@ const Cart = () => {
                     </div>
                   </div>
                   <p>{`Total: ${currency}${item.price * item.quantity}`}</p>
-                  <div className="flex gap-2">
-                    <button
-                      className="bg-black text-white rounded-lg px-2"
-                      onClick={() => quantity(item, 1)}
-                    >
-                      +
-                    </button>
-                    <button
-                      className="bg-black text-white rounded-lg px-2"
-                      onClick={() => deleteitem(index)}
-                    >
-                      Dlete
-                    </button>
-                    <button
-                      className="bg-black text-white rounded-lg px-2"
-                      onClick={() => quantity(item, -1)}
-                    >
-                      -
-                    </button>
-                  </div>
                 </li>
               ))}
             </ul>
-            <div className="flex justify-between mt-10 text-lg ">
+            {/* <div className="flex justify-between mt-10 text-lg ">
               <p>Subtotal:</p>
               <p>{`${currency}${carttotal()}`}</p>
             </div>
@@ -79,18 +75,17 @@ const Cart = () => {
               <p>{`${currency}${carttotal() + delevaryfee}`}</p>
             </div>
             <div className="text-center mt-10">
-              <Link to={`/payment/${user.id}`}>
+              <Link to={"/payment"}>
                 <button className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700">
-                  Place To Order
+                  Checkout
                 </button>
               </Link>
-            </div>
+            </div> */}
           </div>
         )}
       </div>
-      <Footer />
     </div>
   );
 };
 
-export default Cart;
+export default Admincart;

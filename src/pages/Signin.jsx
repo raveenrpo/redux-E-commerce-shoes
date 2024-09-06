@@ -13,6 +13,19 @@ const Signin = () => {
       const user = users.find(
         (user) => user.email === mail && user.password === pass
       );
+      if (mail == "admin@123" && pass == 12345) {
+        navigate("/adminhome");
+        alert("Admin logind successfully");
+        return;
+      }
+      if (user.blockStatus == true) {
+        alert(
+          "You cannot login with this account.There is an error in this account,use another one"
+        );
+        navigate("/login");
+        return;
+      }
+      // console.log(user);
       if (user) {
         localStorage.setItem("user", JSON.stringify(user));
         navigate("/");

@@ -11,7 +11,13 @@ import Product from "./pages/Product";
 import Login from "./pages/Login";
 import Signin from "./pages/Signin";
 import Payment from "./pages/Payment";
-
+import Adminhome from "./admin/adminhome";
+import Adminuser from "./admin/Adminuser";
+import Adminproduct from "./admin/Adminproduct";
+import Admincart from "./admin/Admincart";
+import Addnewproduct from "./admin/Addnewproduct";
+import Updateproduct from "./admin/Updateproduct";
+import Adminorder from "./admin/Adminorder";
 const App = () => {
   return (
     <div>
@@ -24,7 +30,14 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signin" element={<Signin />} />
-        <Route path="/payment" element={<Payment />} />
+        <Route path="/payment/:userid" element={<Payment />} />
+        <Route path="/adminhome" element={<Adminhome />} />
+        <Route path="/adminuser" element={<Adminuser />} />
+        <Route path="/admincart/:userid" element={<Admincart />} />
+        <Route path="/adminproduct" element={<Adminproduct />} />
+        <Route path="/addnewproduct" element={<Addnewproduct />} />
+        <Route path="/updateproduct/:item" element={<Updateproduct />} />
+        <Route path="/adminorder/:orderid" element={<Adminorder />} />
       </Routes>
     </div>
   );

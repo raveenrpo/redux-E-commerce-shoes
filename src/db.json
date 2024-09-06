@@ -1,16 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60d2e87c-9eaa-46a0-b9aa-0f730291262b/air-force-1-07-shoes-VWCc04.png",
-      "price": 9695,
-      "rating": 4.8,
-      "title": "Nike Black & White Air Force ",
-      "category": "Men",
-      "quantity": 1,
-      "bestseller": false
-    },
-    {
       "id": "2",
       "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87ecf2b3-9888-473e-b218-077e284c3dbd/dunk-high-shoes-n3vgBk.png",
       "price": 9295,
@@ -299,6 +289,15 @@
       "category": "Men",
       "quantity": 1,
       "bestseller": true
+    },
+    {
+      "id": "da62",
+      "title": "new product",
+      "quantity": 1,
+      "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60d2e87c-9eaa-46a0-b9aa-0f730291262b/air-force-1-07-shoes-VWCc04.png",
+      "rating": "4",
+      "price": "1111",
+      "category": "Women"
     }
   ],
   "users": [
@@ -315,34 +314,16 @@
           "rating": 4,
           "title": "Nike Dunk High",
           "category": "Men",
-          "quantity": 6,
+          "quantity": 2,
           "bestseller": true
-        }
-      ]
-    },
-    {
-      "id": "b64b",
-      "name": "rpo",
-      "email": "balckbeardwhite@gmail.com",
-      "password": "333333",
-      "cart": [
-        {
-          "id": "6",
-          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c16a276-4048-4b22-872c-8779bb0cfcd8/free-metcon-6-workout-shoes-5L4dkH.png",
-          "price": 10795,
-          "rating": 3.9,
-          "title": "Nike Free ",
-          "category": "Men",
-          "quantity": 1,
-          "bestseller": false
         },
         {
-          "id": "11",
-          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/39e0ae89-68dd-437a-971a-71520b325128/jordan-3-retro-shoes-6Zzf1s.png",
-          "price": 5095,
-          "rating": 3.5,
-          "title": "Jordan 3 Retro",
-          "category": "Kids",
+          "id": "3",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99178fd7-98c7-4ca0-adec-c93ec867e418/dunk-low-shoes-b69X6n.png",
+          "price": 11895,
+          "rating": 4.1,
+          "title": "Nike Dunk Low",
+          "category": "Men",
           "quantity": 1,
           "bestseller": false
         },
@@ -353,7 +334,146 @@
           "rating": 4.6,
           "title": "Nike Air Max AP",
           "category": "Men",
+          "quantity": 3,
+          "bestseller": false
+        }
+      ],
+      "blockStatus": false
+    },
+    {
+      "id": "f03d",
+      "name": "varun",
+      "email": "varun@gmail",
+      "password": "00000",
+      "blockStatus": false,
+      "cart": [
+        {
+          "id": "3",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/99178fd7-98c7-4ca0-adec-c93ec867e418/dunk-low-shoes-b69X6n.png",
+          "price": 11895,
+          "rating": 4.1,
+          "title": "Nike Dunk Low",
+          "category": "Men",
           "quantity": 1,
+          "bestseller": false
+        },
+        {
+          "id": "2",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87ecf2b3-9888-473e-b218-077e284c3dbd/dunk-high-shoes-n3vgBk.png",
+          "price": 9295,
+          "rating": 4,
+          "title": "Nike Dunk High",
+          "category": "Men",
+          "quantity": 1,
+          "bestseller": true
+        },
+        {
+          "id": "6",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c16a276-4048-4b22-872c-8779bb0cfcd8/free-metcon-6-workout-shoes-5L4dkH.png",
+          "price": 10795,
+          "rating": 3.9,
+          "title": "Nike Free ",
+          "category": "Men",
+          "quantity": 1,
+          "bestseller": false
+        }
+      ]
+    },
+    {
+      "id": "2dbc",
+      "name": "nihad",
+      "email": "nihadmanu761@gmail.com",
+      "password": "33333",
+      "cart": [],
+      "blockStatus": false
+    },
+    {
+      "id": "a810",
+      "name": "nnn",
+      "email": "balckbeardwhite@gmail.com",
+      "password": "333333",
+      "cart": [
+        {
+          "id": "2",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87ecf2b3-9888-473e-b218-077e284c3dbd/dunk-high-shoes-n3vgBk.png",
+          "price": 9295,
+          "rating": 4,
+          "title": "Nike Dunk High",
+          "category": "Men",
+          "quantity": 3,
+          "bestseller": true
+        },
+        {
+          "id": "1",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60d2e87c-9eaa-46a0-b9aa-0f730291262b/air-force-1-07-shoes-VWCc04.png",
+          "price": "99999",
+          "rating": 4.8,
+          "title": "Nike Black & White Air Force ",
+          "category": "Men",
+          "quantity": 3,
+          "bestseller": false
+        }
+      ],
+      "blockStatus": true
+    },
+    {
+      "id": "8cff",
+      "name": "textwork",
+      "email": "text@gmail",
+      "password": "00000",
+      "cart": [],
+      "blockStatus": false
+    }
+  ],
+  "order": [
+    {
+      "id": "81b2",
+      "name": "textwork",
+      "email": "text@gmail",
+      "address": "test address",
+      "number": "1234567890",
+      "userid": "8cff",
+      "total": "18600",
+      "cart": [
+        {
+          "id": "2",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/87ecf2b3-9888-473e-b218-077e284c3dbd/dunk-high-shoes-n3vgBk.png",
+          "price": 9295,
+          "rating": 4,
+          "title": "Nike Dunk High",
+          "category": "Men",
+          "quantity": 2,
+          "bestseller": true
+        }
+      ]
+    },
+    {
+      "id": "74b1",
+      "name": "nihad",
+      "email": "nihadmanu761@gmail.com",
+      "address": "chettipadi,neduva",
+      "number": "1234567890",
+      "userid": "2dbc",
+      "total": "121599",
+      "cart": [
+        {
+          "id": "1",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/60d2e87c-9eaa-46a0-b9aa-0f730291262b/air-force-1-07-shoes-VWCc04.png",
+          "price": "99999",
+          "rating": 4.8,
+          "title": "Nike Black & White Air Force ",
+          "category": "Men",
+          "quantity": 1,
+          "bestseller": false
+        },
+        {
+          "id": "6",
+          "img": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/9c16a276-4048-4b22-872c-8779bb0cfcd8/free-metcon-6-workout-shoes-5L4dkH.png",
+          "price": 10795,
+          "rating": 3.9,
+          "title": "Nike Free ",
+          "category": "Men",
+          "quantity": 2,
           "bestseller": false
         }
       ]
