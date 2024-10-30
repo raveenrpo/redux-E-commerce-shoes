@@ -314,7 +314,7 @@
           "rating": 4,
           "title": "Nike Dunk High",
           "category": "Men",
-          "quantity": 2,
+          "quantity": 16,
           "bestseller": true
         },
         {
@@ -324,7 +324,7 @@
           "rating": 4.1,
           "title": "Nike Dunk Low",
           "category": "Men",
-          "quantity": 1,
+          "quantity": 3,
           "bestseller": false
         },
         {
@@ -334,7 +334,7 @@
           "rating": 4.6,
           "title": "Nike Air Max AP",
           "category": "Men",
-          "quantity": 3,
+          "quantity": 10,
           "bestseller": false
         }
       ],

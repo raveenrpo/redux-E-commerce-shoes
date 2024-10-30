@@ -4,13 +4,32 @@ import Title from "../components/Title";
 import { Link } from "react-router-dom";
 import Navbaar from "../components/Navbaar";
 import Footer from "../components/Footer";
-
+import { useDispatch, useSelector } from "react-redux";
+import {
+  fetchCartData,
+  fetchUsers,
+  deleteItem,
+  updateQuantity,
+} from "../ShopSlice/shopeSlice";
 const Cart = () => {
-  const { cartItems, currency, delevaryfee, carttotal, deleteitem, quantity } =
-    useContext(Shopcontext);
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.shop.cartItems);
+  const currency = useSelector((state) => state.shop.currency);
   const userJson = localStorage.getItem("user");
-
   const user = JSON.parse(userJson);
+  console.log(user.id);
+  useEffect(() => {
+    dispatch(fetchCartData(user.id));
+  });
+  const handlequantity = (prd, num) => {
+    if (prd.quantity === 1 && num === -1) return;
+    const newquantity = cartItems.map((ite) =>
+      ite.id === prd.id ? { ...ite, quantity: ite.quantity + num } : ite
+    );
+    dispatch(updateQuantity({ userId: user.id, newQuantity: newquantity }));
+  };
+  // const { cartItems, delevaryfee, carttotal, deleteitem, quantity } =
+  //   useContext(Shopcontext);
 
   return (
     <div>
@@ -42,41 +61,41 @@ const Cart = () => {
                       <p>{`Price: ${currency}${item.price}`}</p>
                     </div>
                   </div>
-                  <p>{`Total: ${currency}${item.price * item.quantity}`}</p>
+                  {/* <p>{`Total: ${currency}${item.price * item.quantity}`}</p> */}
                   <div className="flex gap-2">
                     <button
                       className="bg-black text-white rounded-lg px-2"
-                      onClick={() => quantity(item, 1)}
+                      // onClick={handlequantity(item, 1)}
                     >
                       +
                     </button>
                     <button
                       className="bg-black text-white rounded-lg px-2"
-                      onClick={() => deleteitem(index)}
+                      // onClick={() =>
+                      //    dispatch(deleteItem(user.id, index, cartItems))
+                      // }
                     >
                       Dlete
                     </button>
                     <button
                       className="bg-black text-white rounded-lg px-2"
-                      onClick={() => quantity(item, -1)}
-                    >
-                      -
-                    </button>
+                      // onClick={handlequantity(item, -1)}
+                    ></button>
                   </div>
                 </li>
               ))}
             </ul>
             <div className="flex justify-between mt-10 text-lg ">
               <p>Subtotal:</p>
-              <p>{`${currency}${carttotal()}`}</p>
+              {/* <p>{`${currency}${carttotal()}`}</p> */}
             </div>
             <div className="flex justify-between text-lg ">
               <p>Delivery Fee:</p>
-              <p>{`${currency}${delevaryfee}`}</p>
+              {/* <p>{`${currency}${delevaryfee}`}</p> */}
             </div>
             <div className="flex justify-between text-xl font-bold mt-4">
               <p>Total:</p>
-              <p>{`${currency}${carttotal() + delevaryfee}`}</p>
+              {/* <p>{`${currency}${carttotal() + delevaryfee}`}</p> */}
             </div>
             <div className="text-center mt-10">
               <Link to={`/payment/${user.id}`}>

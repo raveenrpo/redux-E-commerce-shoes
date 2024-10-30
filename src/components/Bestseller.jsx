@@ -2,14 +2,21 @@ import React, { useContext, useEffect, useState } from "react";
 import { Shopcontext } from "../context/Shopcontext";
 import Title from "./Title";
 import Productitem from "./Productitem";
-
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "../ShopSlice/shopeSlice";
 const Bestseller = () => {
-  const { product } = useContext(Shopcontext);
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.shop.products);
   const [bestseller, setbestseller] = useState([]);
   useEffect(() => {
-    const bestproduct = product.products.filter((item) => item.bestseller);
+    dispatch(fetchProducts());
+  }, [dispatch]);
+  useEffect(() => {
+    const bestproduct = products.filter((item) => item.bestseller);
     setbestseller(bestproduct.slice(0, 5));
-  }, []);
+  }, [products]);
+  console.log(bestseller);
+
   return (
     <div className="my-10">
       <div className="text-center text-3xl py-8">

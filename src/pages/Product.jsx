@@ -1,14 +1,18 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { Shopcontext } from "../context/Shopcontext";
 import Navbaar from "../components/Navbaar";
-
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts, addToCart } from "../ShopSlice/shopeSlice";
 const Product = () => {
+  const dispatch = useDispatch();
   const { productid } = useParams();
-  const { product, addToCart } = useContext(Shopcontext);
+  const products = useSelector((state) => state.shop.products);
+  useEffect(() => {
+    dispatch(fetchProducts());
+  });
   const [productdata, setproductdata] = useState(false);
   const fetchproductdata = () => {
-    product.products.map((item) => {
+    products.map((item) => {
       if (item.id == productid) {
         setproductdata(item);
         return null;

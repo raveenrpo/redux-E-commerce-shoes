@@ -30,14 +30,14 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signin" element={<Signin />} />
-        <Route path="/payment/:userid" element={<Payment />} />
+        {/*  <Route path="/payment/:userid" element={<Payment />} />
         <Route path="/adminhome" element={<Adminhome />} />
         <Route path="/adminuser" element={<Adminuser />} />
         <Route path="/admincart/:userid" element={<Admincart />} />
         <Route path="/adminproduct" element={<Adminproduct />} />
         <Route path="/addnewproduct" element={<Addnewproduct />} />
         <Route path="/updateproduct/:item" element={<Updateproduct />} />
-        <Route path="/adminorder/:orderid" element={<Adminorder />} />
+        <Route path="/adminorder/:orderid" element={<Adminorder />} /> */}
       </Routes>
     </div>
   );

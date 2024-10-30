@@ -1,19 +1,24 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Shopcontext } from "../context/Shopcontext";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 import Title from "../components/Title";
 import Productitem from "../components/Productitem";
 import Navbaar from "../components/Navbaar";
 import Footer from "../components/Footer";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchProducts } from "../ShopSlice/shopeSlice";
 const Collection = () => {
-  const { product } = useContext(Shopcontext);
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.shop.products);
+  useEffect(() => {
+    dispatch(fetchProducts());
+  });
   const [isCategoriesVisible, setIsCategoriesVisible] = useState(false);
   const [filterproduct, setfilterproduct] = useState([]);
   const [category, setcategory] = useState([]);
   const [search, setsearch] = useState("");
   const searchfilterproduct = () => {
-    let productcopy = product.products;
+    let productcopy = products;
     if (search) {
       productcopy = productcopy.filter((item) =>
         item.title.toLowerCase().includes(search.toLowerCase())
@@ -30,7 +35,7 @@ const Collection = () => {
     );
   };
   const applayfilter = () => {
-    let productcopy = product.products;
+    let productcopy = products;
     if (category.length > 0) {
       productcopy = productcopy.filter((item) =>
         category.includes(item.category)

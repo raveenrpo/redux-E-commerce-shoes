@@ -1,14 +1,21 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Shopcontext } from "../context/Shopcontext";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import Title from "./Title";
 import Productitem from "./Productitem";
+import { fetchProducts } from "../ShopSlice/shopeSlice";
 
 const Latestcollection = () => {
-  const { product } = useContext(Shopcontext);
-  const [latestproduct, setlatestproduct] = useState([]);
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.shop.products);
+  const [latestProduct, setLatestProduct] = useState([]);
   useEffect(() => {
-    setlatestproduct(product.products.slice(0, 10));
-  }, []);
+    dispatch(fetchProducts);
+  }, [dispatch]);
+  useEffect(() => {
+    if (products.length > 0) {
+      setLatestProduct(products.slice(0, 10));
+    }
+  }, [products]);
   return (
     <div className="my-10">
       <div className="text-center py-8 text-3xl">
@@ -20,9 +27,9 @@ const Latestcollection = () => {
           now and find your new favorite footwear!
         </p>
       </div>
-      {/* product rendering */}
+
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
-        {latestproduct.map((item, index) => (
+        {latestProduct.map((item, index) => (
           <Productitem
             key={index}
             id={item.id}
